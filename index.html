@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="keep_icon.webp">
+    <title>Keep-Notes</title>
+    <link rel="stylesheet" href="i (1).css">
+    <script src="https://kit.fontawesome.com/040e2ba76e.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+    <header>
+        <section class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu'></i>
+            </div>
+        </section>
+        <a href=""><img src="keep.png" alt="" srcset=""><span>Keep</span></a>
+        <div class="search_box">
+            <input type="search" placeholder="Search">
+            <span class="fa fa-search"></span>
+        </div>
+        <ol>
+            <li><a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-table-cells-large"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+            <li><a href="#"><i class='bx bxs-grid'></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ol>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li> <button id="dash"><i class=" fa fa-regular fa-lightbulb"> <span class="lis">Notes</span></i>
+
+                </button> </li>
+            <li> <button id="profi"><i class="fa fa-regular fa-bell"> <span class="lis">Remainder</span></i>
+
+                </button> </li>
+            <li> <button id="enroll"><i class="fa fa-solid fa-pen"> <span class="lis">Edit label</span></i>
+
+                </button> </li>
+            <li> <button id="wish"><i class="fa fa-solid fa-box-archive"> <span class="lis">Archieve</span></i>
+
+                </button> </li>
+            <li> <button id="my"><i class="fa fa-regular fa-trash-can"> <span class="lis">Trash</span></i>
+
+                </button> </li>
+
+        </ul>
+    </div>
+
+    <section class="new">
+        <div class="popup-box">
+            <div class="popup">
+              <div class="content">
+                <header>
+                  <p></p>
+                  <i class="uil uil-times"></i>
+                </header>
+                <form action="#">
+                  <div class="row title">
+                    <label>Title</label>
+                    <input type="text" spellcheck="false">
+                  </div>
+                  <div class="row description">
+                    <label>Description</label>
+                    <textarea spellcheck="false"></textarea>
+                  </div>
+                  <button></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="notes" id="notes">
+            <div class="wrapper">
+            <li class="add-box">
+              <div class="icon"><i class="uil uil-plus"></i></div>
+              <p>Add new note</p>
+            </li>
+          </div>
+          </div>
+          
+          <!-- Remainder -->
+
+
+          <!-- <div class="remainder" id="remainder">
+            hi this id remainder
+          </div> -->
+    </section>
+    <script>
+      const dragArea = document.querySelector(".wrapper");
+      new Sortable(dragArea,{
+        animation:350
+      });
+    </script>
+    <script src="i.js"></script>
+    <script src="open.js"></script>
+</body>
+</html>
